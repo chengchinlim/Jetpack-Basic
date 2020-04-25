@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_challenge"
+    app:startDestination="@id/challengeHomeFragment">
+
+    <fragment
+        android:id="@+id/challengeHomeFragment"
+        android:name="com.cheng.jetpack_basic.challenge.ChallengeHomeFragment"
+        android:label="ChallengeHomeFragment"
+        tool:layout="@layout/fragment_challenge_home">
+        <action
+            android:id="@+id/action_challengeHomeFragment_to_challengeTermsFragment"
+            app:destination="@id/challengeTermsFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_challengeHomeFragment_to_challengeNameFragment"
+            app:destination="@id/challengeNameFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/challengeTermsFragment"
+        android:name="com.cheng.jetpack_basic.challenge.ChallengeTermsFragment"
+        android:label="ChallengeTermsFragment"
+        tool:layout="@layout/fragment_challenge_terms" />
+    <fragment
+        tool:layout="@layout/fragment_challenge_name"
+        android:id="@+id/challengeNameFragment"
+        android:name="com.cheng.jetpack_basic.challenge.ChallengeNameFragment"
+        android:label="ChallengeNameFragment" >
+        <action
+            android:id="@+id/action_challengeNameFragment_to_challengeEmailFragment"
+            app:destination="@id/challengeEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/challengeEmailFragment"
+        tool:layout="@layout/fragment_challenge_email"
+        android:name="com.cheng.jetpack_basic.challenge.ChallengeEmailFragment"
+        android:label="ChallengeEmailFragment" >
+        <action
+            android:id="@+id/action_challengeEmailFragment_to_challengeWelcomeFragment"
+            app:destination="@id/challengeWelcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/challengeWelcomeFragment"
+        tool:layout="@layout/fragment_challenge_welcome"
+        android:name="com.cheng.jetpack_basic.challenge.ChallengeWelcomeFragment"
+        android:label="ChallengeWelcomeFragment" >
+        <action
+            android:id="@+id/action_challengeWelcomeFragment_to_challengeTermsFragment"
+            app:destination="@id/challengeTermsFragment" />
+    </fragment>
+</navigation>
