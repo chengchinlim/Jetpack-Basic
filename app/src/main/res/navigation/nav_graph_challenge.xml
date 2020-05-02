@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/challengeHomeFragment"
-        android:name="com.cheng.jetpack_basic.challenge.ChallengeHomeFragment"
+        android:name="com.cheng.jetpack_basic.navigation.challenge.ChallengeHomeFragment"
         android:label="ChallengeHomeFragment"
         tool:layout="@layout/fragment_challenge_home">
         <action
@@ -27,13 +27,13 @@
     </fragment>
     <fragment
         android:id="@+id/challengeTermsFragment"
-        android:name="com.cheng.jetpack_basic.challenge.ChallengeTermsFragment"
+        android:name="com.cheng.jetpack_basic.navigation.challenge.ChallengeTermsFragment"
         android:label="ChallengeTermsFragment"
         tool:layout="@layout/fragment_challenge_terms" />
     <fragment
         tool:layout="@layout/fragment_challenge_name"
         android:id="@+id/challengeNameFragment"
-        android:name="com.cheng.jetpack_basic.challenge.ChallengeNameFragment"
+        android:name="com.cheng.jetpack_basic.navigation.challenge.ChallengeNameFragment"
         android:label="ChallengeNameFragment" >
         <action
             android:id="@+id/action_challengeNameFragment_to_challengeEmailFragment"
@@ -42,7 +42,7 @@
     <fragment
         android:id="@+id/challengeEmailFragment"
         tool:layout="@layout/fragment_challenge_email"
-        android:name="com.cheng.jetpack_basic.challenge.ChallengeEmailFragment"
+        android:name="com.cheng.jetpack_basic.navigation.challenge.ChallengeEmailFragment"
         android:label="ChallengeEmailFragment" >
         <action
             android:id="@+id/action_challengeEmailFragment_to_challengeWelcomeFragment"
@@ -51,7 +51,7 @@
     <fragment
         android:id="@+id/challengeWelcomeFragment"
         tool:layout="@layout/fragment_challenge_welcome"
-        android:name="com.cheng.jetpack_basic.challenge.ChallengeWelcomeFragment"
+        android:name="com.cheng.jetpack_basic.navigation.challenge.ChallengeWelcomeFragment"
         android:label="ChallengeWelcomeFragment" >
         <action
             android:id="@+id/action_challengeWelcomeFragment_to_challengeTermsFragment"

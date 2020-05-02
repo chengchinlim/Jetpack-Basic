@@ -1,4 +1,4 @@
-package com.cheng.jetpack_basic.demo
+package com.cheng.jetpack_basic.navigation.demo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

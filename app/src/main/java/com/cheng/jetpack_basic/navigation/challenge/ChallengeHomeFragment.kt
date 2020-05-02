@@ -1,4 +1,4 @@
-package com.cheng.jetpack_basic.challenge
+package com.cheng.jetpack_basic.navigation.challenge
 
 
 import android.os.Bundle
