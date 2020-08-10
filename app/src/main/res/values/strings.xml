@@ -3,4 +3,9 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="terms_and_conditions">Terms and conditions</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="running">Running</string>
+    <string name="succeeded">Succeeded</string>
+    <string name="enqueued">Enqueued</string>
 </resources>

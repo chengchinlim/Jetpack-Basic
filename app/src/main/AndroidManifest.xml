@@ -10,15 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".room.RoomMainActivity">
+
+        </activity>
+        <activity android:name=".navigation.demo.DemoMainActivity"></activity>
+        <activity android:name=".navigation.challenge.ChallengeMainActivity">
+
+        </activity>
+        <activity android:name=".workManager.WorkManagerMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".navigation.demo.DemoMainActivity"></activity>
-        <activity android:name=".navigation.challenge.ChallengeMainActivity">
-
         </activity>
     </application>
 
